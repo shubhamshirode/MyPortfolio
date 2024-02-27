@@ -77,8 +77,6 @@ header button a{
 .dropdown_content:hover{
     display: inline;
 }
-
-
 /* Section 1 */
 .section1{
     background-color: lightgoldenrodyellow;
@@ -88,7 +86,6 @@ header button a{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .sect1_div1{
     width: 8%;
@@ -150,7 +147,6 @@ header button a{
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
-    /* box-shadow: 1px 1px 10px black; */
     margin: 1rem;
 }
 .sect2_title h2{
@@ -169,7 +165,6 @@ header button a{
     width: 45%;
     margin:1rem ;
     height: 90%;
-    /* box-shadow: inset 1px 1px 10px 5px black; */
     overflow: scroll;
     background-color: lightgoldenrodyellow;
 }
@@ -178,11 +173,8 @@ header button a{
     margin:1rem;
     height: 90%;
     background-color: lightgoldenrodyellow;
-    /* background-color: rgb(205, 250, 219,0.6); */
-    /* box-shadow: inset 1px 1px 10px 5px black; */
     overflow: scroll;
 }
-
 /*  */
 table{
     margin: 2rem auto;
@@ -197,10 +189,7 @@ table caption{
     font-size: 2rem;
     text-shadow: 1px 1px 2px black;    
     padding-bottom: 1rem;
-    /* font-weight: 800; */
-    /* text-shadow: 1rem 1rem 1rem 1rem black; */
 }
-
 /* Section 3 */
 .section3{
     width: 90%;
@@ -208,34 +197,28 @@ table caption{
     display: flex;
     justify-content: center;
     margin: 2rem auto;
-    }
+}
     .section3 div>p{
     padding: 1rem;
     font-size: 1.5rem;
     text-align: center;
     text-shadow: 1px 1px 2px black;
     font-weight: 600;
-    }
+}
     .certi{
     width: 55%;
-    /* background-color: rgb(205, 250, 219,0.6); */
     background-color: lightgoldenrodyellow;
-
-    /* box-shadow: inset 1px 1px 10px 5px black; */
     margin: 1rem;
     padding: 1rem;
     overflow: scroll;
-    
-    }
+}
     .certi li{
     padding:1rem;
     list-style: none;
-    }
+}
     .skill{
     width: 45%;
-    /* background-color: rgb(205, 250, 219,0.6); */
     background-color: lightgoldenrodyellow;
-    /* box-shadow: inset 1px 1px 10px 5px black; */
     margin: 1rem;
     padding: 1rem 2rem;
     overflow: scroll;
@@ -249,22 +232,14 @@ table caption{
     background-color: lightgoldenrodyellow;
     border: none;
     box-shadow: 1px 1px 5px 1px black;
-
     }
-    
     .skill i{
         margin: 0.1rem 0.5rem;
     }
-    /* Section 4 */
-
     .section4 > div{
         width: 90%;
         margin: 2rem auto;
-        padding: 1rem;
-        /* display: flex; */
-
-
-        
+        padding: 1rem;  
     }
     .section4>h2{
         font-size: 2.5rem;
@@ -275,48 +250,38 @@ table caption{
     .section4 .pro{
         height: 20rem;
         width: 100%;
-        /* box-shadow: inset 1px 1px 10px 5px black; */
-        transition: height  , width ;
         padding: 2rem;
         margin: 2rem 0;
         font-size: small;
-        /* background-color: rgb(205, 250, 219,0.6); */
         background-color: lightgoldenrodyellow;
-
         overflow: scroll;
-    
     }
     .pro h2{
         text-align: center;
         padding-bottom: 1rem;
     }
-    
     .section4 .pro p{
         padding: 0.5rem 0;
-        
     }
     .section4 .pro button{
         text-align: center;
         margin: 0.2rem ;
         width: 7rem;
         padding: 0.5rem;
-        /* background-color: rgba(0, 0, 0, 0.137); */
         background-color: lightgoldenrodyellow;
-
         border: 0;
         border-radius: 5px;
         box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5) ;
-        
     }
-    
     .section4 .pro > div{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
     }
     .section4 .p-d1{
         border-right: 1px solid rgb(0, 0, 0,0.2);
         width: 50%;
-    
     }
     .section4 .p-d2{
         padding: 1rem 0;
@@ -328,15 +293,10 @@ table caption{
         text-align: center;
         width: 90%;
         height: 90vh;
-        /* box-shadow: inset 1px 1px 10px 5px black; */
         margin: auto;
         padding: 2rem;
         background-color: lightgoldenrodyellow;
-        /* background-color: rgb(205, 250, 219,0.6); */
-
     }
-    
-
     .section5 h2{
         font-size: 2.5rem;
         text-shadow: 1px 1px 2px black;
@@ -373,7 +333,6 @@ table caption{
         flex-direction: column;
         height: auto;
         margin: auto;
-        /* width: 90%; */
     }
     .info{
         width: 100% ;
@@ -391,5 +350,4 @@ table caption{
     .skill{
         width: 100%;
     }
-    
 }
