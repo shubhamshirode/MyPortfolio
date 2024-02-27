@@ -1,20 +1,23 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
-    font-weight:bold;
+    font-weight: bold;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
-a{
+
+a {
     text-decoration: none;
-    color: black; 
+    color: black;
 }
-header{
+
+header {
     height: 5rem;
     width: 100%;
     display: flex;
@@ -27,58 +30,71 @@ header{
     padding: 0 1rem;
     text-transform: uppercase;
 }
-header ul{
+
+header ul {
     list-style-type: none;
 }
-header li{
+
+header li {
     display: inline-flex;
     padding: 0 1rem;
 }
-header i{
+
+header i {
     margin: 0 0.5rem;
 }
-header button{
+
+header button {
     padding: 0.5rem 1rem;
     background-color: rgba(5, 5, 5, 0.6);
     box-shadow: 2px 2px 2px black;
     border: 0;
 }
-header button a{
+
+header button a {
     color: white;
     text-shadow: none;
 }
+
 /* Nav Menu */
-.nav-menu{
+.nav-menu {
     display: none;
 }
-.dropdown{
+
+.dropdown {
     display: inline;
-    position: relative;  
+    position: relative;
 }
-.dropbtn{
+
+.dropbtn {
     font-size: 1rem;
 }
-.dropdown_content{
+
+.dropdown_content {
     display: none;
     position: absolute;
     /* width: 5rem; */
-    margin:  1.5rem -3.5rem;
+    margin: 1.5rem -3.5rem;
 }
-.dropdown_content a{
-    display:flex;
+
+.dropdown_content a {
+    display: flex;
     text-decoration: none;
     padding: -5rem;
     width: auto;
 }
-.dropdown:hover .dropdown_content{
+
+.dropdown:hover .dropdown_content {
     display: inline;
     cursor: pointer;
 }
-.dropdown_content:hover{
+
+.dropdown_content:hover {
     display: inline;
 }
+
 /* Section 1 */
-.section1{
+.section1 {
     background-color: lightgoldenrodyellow;
     height: 100vh;
     width: 100%;
@@ -87,14 +103,17 @@ header button a{
     justify-content: center;
     align-items: center;
 }
-.sect1_div1{
+
+.sect1_div1 {
     width: 8%;
-    font-size: 2rem; 
+    font-size: 2rem;
 }
-.sect1_div1 i{
+
+.sect1_div1 i {
     margin: 0.5rem 1rem;
 }
-.sect1_div1 div{
+
+.sect1_div1 div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,37 +121,43 @@ header button a{
     background-color: White;
     height: 40vh;
 }
-.sect1_div2{
+
+.sect1_div2 {
     width: 90%;
     text-align: center;
 }
-.sect1_div2 h1{
+
+.sect1_div2 h1 {
     margin: auto;
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px black;
 }
-.sect1_div2 p{
+
+.sect1_div2 p {
     width: 50%;
     margin: 2rem auto;
 }
-.sect1_div2 button{
+
+.sect1_div2 button {
     background-color: rgba(5, 5, 5, 0.6);
     box-shadow: 2px 2px 2px black;
     border: none;
     padding: 1rem 2.5rem;
     color: White;
 }
-.sect1_image{
+
+.sect1_image {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
     box-shadow: 1px 1px 10px 1PX black;
     margin: 1rem;
 }
+
 /* Section 2 */
-.section2{
+.section2 {
     width: 90%;
     height: 90vh;
     text-align: center;
@@ -140,91 +165,105 @@ header button a{
     display: flex;
     justify-content: space-between;
 }
-.sect2_title{
+
+.sect2_title {
     text-align: center;
 }
-.sect2_title img{
+
+.sect2_title img {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
     margin: 1rem;
 }
-.sect2_title h2{
+
+.sect2_title h2 {
     font-size: 2.5rem;
     text-shadow: 1px 1px 2px black;
 }
-.section2 div>p{
+
+.section2 div>p {
     padding: 1rem;
     font-size: 1.5rem;
     text-align: center;
     text-shadow: 1px 1px 2px black;
     font-weight: 600;
 }
+
 /*  */
-.info{
+.info {
     width: 45%;
-    margin:1rem ;
+    margin: 1rem;
     height: 90%;
     overflow: scroll;
     background-color: lightgoldenrodyellow;
 }
-.edu{
+
+.edu {
     width: 55%;
-    margin:1rem;
+    margin: 1rem;
     height: 90%;
     background-color: lightgoldenrodyellow;
     overflow: scroll;
 }
-/*  */
-table{
+
+table {
     margin: 2rem auto;
     text-align: left;
     width: 100%;
 }
+
 td {
     padding: 1rem;
     text-align: left;
 }
-table caption{
+
+table caption {
     font-size: 2rem;
-    text-shadow: 1px 1px 2px black;    
+    text-shadow: 1px 1px 2px black;
     padding-bottom: 1rem;
 }
+
 /* Section 3 */
-.section3{
+.section3 {
     width: 90%;
     height: 80vh;
     display: flex;
     justify-content: center;
     margin: 2rem auto;
 }
-    .section3 div>p{
+
+.section3 div>p {
     padding: 1rem;
     font-size: 1.5rem;
     text-align: center;
     text-shadow: 1px 1px 2px black;
     font-weight: 600;
 }
-    .certi{
+
+.certi {
     width: 55%;
     background-color: lightgoldenrodyellow;
     margin: 1rem;
     padding: 1rem;
     overflow: scroll;
 }
-    .certi li{
-    padding:1rem;
+
+.certi li {
+    padding: 1rem;
     list-style: none;
 }
-    .skill{
+
+.skill {
     width: 45%;
     background-color: lightgoldenrodyellow;
     margin: 1rem;
     padding: 1rem 2rem;
     overflow: scroll;
-    
-    }
-    .skill button{
+
+}
+
+.skill button {
     margin: 0.5rem;
     padding: 0.5rem 1.5rem;
     font-size: 0.8rem;
@@ -232,122 +271,147 @@ table caption{
     background-color: lightgoldenrodyellow;
     border: none;
     box-shadow: 1px 1px 5px 1px black;
-    }
-    .skill i{
-        margin: 0.1rem 0.5rem;
-    }
-    .section4 > div{
-        width: 90%;
-        margin: 2rem auto;
-        padding: 1rem;  
-    }
-    .section4>h2{
-        font-size: 2.5rem;
-        text-shadow: 1px 1px 2px black;
-        text-align: center;
-        margin: 2rem;
-    }
-    .section4 .pro{
-        height: 20rem;
-        width: 100%;
-        padding: 2rem;
-        margin: 2rem 0;
-        font-size: small;
-        background-color: lightgoldenrodyellow;
-        overflow: scroll;
-    }
-    .pro h2{
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .section4 .pro p{
-        padding: 0.5rem 0;
-    }
-    .section4 .pro button{
-        text-align: center;
-        margin: 0.2rem ;
-        width: 7rem;
-        padding: 0.5rem;
-        background-color: lightgoldenrodyellow;
-        border: 0;
-        border-radius: 5px;
-        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5) ;
-    }
-    .section4 .pro > div{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .section4 .p-d1{
-        border-right: 1px solid rgb(0, 0, 0,0.2);
-        width: 50%;
-    }
-    .section4 .p-d2{
-        padding: 1rem 0;
-        width: 50%;
-        padding: 1rem;
-    }
-    /* Section 5 */
-    .section5{
-        text-align: center;
-        width: 90%;
-        height: 90vh;
-        margin: auto;
-        padding: 2rem;
-        background-color: lightgoldenrodyellow;
-    }
-    .section5 h2{
-        font-size: 2.5rem;
-        text-shadow: 1px 1px 2px black;
-    }
+}
+
+.skill i {
+    margin: 0.1rem 0.5rem;
+}
+
+.section4>div {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.section4>h2 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin: 2rem;
+}
+
+.section4 .pro {
+    height: 20rem;
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+    font-size: small;
+    background-color: lightgoldenrodyellow;
+    overflow: scroll;
+}
+
+.pro h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.section4 .pro p {
+    padding: 0.5rem 0;
+}
+
+.section4 .pro button {
+    text-align: center;
+    margin: 0.2rem;
+    width: 7rem;
+    padding: 0.5rem;
+    background-color: lightgoldenrodyellow;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.section4 .pro>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section4 .p-d1 {
+    border-right: 1px solid rgb(0, 0, 0, 0.2);
+    width: 50%;
+}
+
+.section4 .p-d2 {
+    padding: 1rem 0;
+    width: 50%;
+    padding: 1rem;
+}
+
+/* Section 5 */
+.section5 {
+    text-align: center;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    padding: 2rem;
+    background-color: lightgoldenrodyellow;
+}
+
+.section5 h2 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+}
+
 /* Tablet Screen */
 @media screen and (max-width:768px) {
-    header{
+    header {
         padding: 0
     }
-    header li{
+
+    header li {
         padding: 0 0.5rem;
     }
-    .section1{
+
+    .section1 {
         height: auto;
         padding: 1rem 0;
     }
+
     .sect1_div2 h1 {
         display: flex;
         flex-direction: column;
     }
 }
+
 /* Mobail Screen */
 @media screen and (max-width:425px) {
-    header{
+    header {
         padding: 1rem
     }
-    .nav-menu{
+
+    .nav-menu {
         display: block;
     }
-    .header_div2{
+
+    .header_div2 {
         display: none;
     }
-    .section2{
+
+    .section2 {
         flex-direction: column;
         height: auto;
         margin: auto;
     }
-    .info{
-        width: 100% ;
-    }
-    .edu{
+
+    .info {
         width: 100%;
     }
-    .section3{
+
+    .edu {
+        width: 100%;
+    }
+
+    .section3 {
         flex-direction: column;
         height: auto;
     }
-    .certi{
+
+    .certi {
         width: 100%;
     }
-    .skill{
+
+    .skill {
         width: 100%;
     }
 }
