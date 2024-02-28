@@ -22,7 +22,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: auto;
     position: sticky;
     top: 0;
@@ -107,8 +107,9 @@ header button a {
 }
 
 .sect1_div1 {
-    width: 8%;
+    width: 5%;
     font-size: 2rem;
+
 }
 
 .sect1_div1 i {
@@ -121,7 +122,6 @@ header button a {
     align-items: center;
     justify-content: center;
     background-color: White;
-    height: 40vh;
 }
 
 .sect1_div2 {
@@ -259,7 +259,7 @@ table caption {
 .skill {
     width: 45%;
     background-color: rgba(198, 220, 186, 0.478);
-    margin: 1rem ;
+    margin: 1rem;
     padding: 1rem 2rem;
     overflow: scroll;
 
@@ -279,10 +279,11 @@ table caption {
     margin: 0.1rem 0.5rem;
 }
 
-.section4>div {
+/* section 4 */
+.section4 {
     width: 90%;
     margin: 2rem auto;
-    padding: 1rem;
+
 }
 
 .section4>h2 {
@@ -290,55 +291,73 @@ table caption {
     text-shadow: 1px 1px 2px black;
     text-align: center;
     margin: 2rem;
+
 }
 
-.section4 .pro {
-    height: 20rem;
-    width: 90%;
-    padding: 2rem;
-    margin: 2rem auto;
-    font-size: small;
-    background-color: rgba(198, 220, 186, 0.478);
-    overflow: scroll;
+.sect4-img {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 3rem;
 }
 
-.pro h2 {
+.sect4-img div {
+    box-shadow: inset 2px 2px 10px 5px white;
+}
+
+.section4 img {
+    width: 40vw;
+    height: 60vh;
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+.sect4-im {
+    position: relative;
+}
+
+.sect4-text {
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    height: 60vh;
+    margin-top: -61vh;
+    background-color: rgba(0, 0, 0, 0.893);
+    color: white;
+    width: 40vw;
+
+}
+
+.sect4-text h2 {
     text-align: center;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-.section4 .pro p {
-    padding: 0.5rem 0;
+.sect4-im:hover~.sect4-text {
+
+    display: flex;
+    flex-direction: column;
 }
 
-.section4 .pro button {
+.sect4-text:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4 button {
+    align-self: center;
     text-align: center;
     margin: 0.2rem;
     width: 7rem;
     padding: 0.5rem;
-    background-color: rgba(198, 220, 186, 0.478);
+    background-color: rgb(252, 255, 252);
     border: 0;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
-.section4 .pro>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
+/*  */
 
-.section4 .p-d1 {
-    border-right: 1px solid rgb(0, 0, 0, 0.2);
-    width: 50%;
-}
 
-.section4 .p-d2 {
-    padding: 1rem 0;
-    width: 50%;
-    padding: 1rem;
-}
 
 /* Section 5 */
 .section5 {
@@ -379,20 +398,24 @@ table caption {
 
 /* Mobail Screen */
 @media screen and (max-width:425px) {
-    body{
+    body {
         width: 96%;
         margin: auto;
     }
-    .section1{
+
+    .section1 {
         flex-direction: column;
     }
-    .sect1_div1{
+
+    .sect1_div1 {
         width: 90%;
     }
-    .sect1_div1 div{
+
+    .sect1_div1 div {
         flex-direction: row;
         height: auto;
     }
+
     header {
         padding: 1rem
     }
@@ -401,7 +424,7 @@ table caption {
         display: block;
     }
 
-    
+
     .header_div2 {
         display: none;
     }
@@ -427,6 +450,21 @@ table caption {
         height: auto;
     }
 
+    .sect4-img {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 3rem;
+    }
+
+    .sect4-img img {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .sect4-text {
+        width: 90vw;
+    }
+
     .certi {
         width: 100%;
         margin: 1rem auto;
@@ -436,7 +474,8 @@ table caption {
         width: 100%;
         margin: 1rem auto;
     }
-    .section5{
+
+    .section5 {
         height: auto;
     }
 }
