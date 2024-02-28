@@ -344,6 +344,7 @@ table caption {
 .section5 {
     text-align: center;
     width: 90%;
+    margin: auto;
     height: 90vh;
     margin: auto;
     padding: 2rem;
