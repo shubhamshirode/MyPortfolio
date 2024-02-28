@@ -195,7 +195,7 @@ header button a {
 /*  */
 .info {
     width: 45%;
-    margin: 1rem auto;
+    margin: 1rem;
     height: 90%;
     overflow: scroll;
     background-color: rgba(198, 220, 186, 0.478);
@@ -203,7 +203,7 @@ header button a {
 
 .edu {
     width: 55%;
-    margin: 1rem auto;
+    margin: 1rem;
     height: 90%;
     background-color: rgba(198, 220, 186, 0.478);
     overflow: scroll;
@@ -246,7 +246,7 @@ table caption {
 .certi {
     width: 55%;
     background-color: rgba(198, 220, 186, 0.478);
-    margin: 1rem auto;
+    margin: 1rem;
     padding: 1rem;
     overflow: scroll;
 }
@@ -259,7 +259,7 @@ table caption {
 .skill {
     width: 45%;
     background-color: rgba(198, 220, 186, 0.478);
-    margin: 1rem auto;
+    margin: 1rem ;
     padding: 1rem 2rem;
     overflow: scroll;
 
@@ -413,10 +413,12 @@ table caption {
 
     .info {
         width: 100%;
+        margin: 1rem auto;
     }
 
     .edu {
         width: 100%;
+        margin: 1rem auto;
     }
 
     .section3 {
@@ -426,10 +428,12 @@ table caption {
 
     .certi {
         width: 100%;
+        margin: 1rem auto;
     }
 
     .skill {
         width: 100%;
+        margin: 1rem auto;
     }
     .section5{
         height: auto;
