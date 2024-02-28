@@ -95,7 +95,7 @@ header button a {
 
 /* Section 1 */
 .section1 {
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(198, 220, 186, 0.478);
     height: 100vh;
     width: 100%;
     background-size: 100% 100%;
@@ -193,17 +193,17 @@ header button a {
 /*  */
 .info {
     width: 45%;
-    margin: 1rem;
+    margin: 1rem auto;
     height: 90%;
     overflow: scroll;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(198, 220, 186, 0.478);
 }
 
 .edu {
     width: 55%;
-    margin: 1rem;
+    margin: 1rem auto;
     height: 90%;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(198, 220, 186, 0.478);
     overflow: scroll;
 }
 
@@ -243,8 +243,8 @@ table caption {
 
 .certi {
     width: 55%;
-    background-color: lightgoldenrodyellow;
-    margin: 1rem;
+    background-color: rgba(198, 220, 186, 0.478);
+    margin: 1rem auto;
     padding: 1rem;
     overflow: scroll;
 }
@@ -256,8 +256,8 @@ table caption {
 
 .skill {
     width: 45%;
-    background-color: lightgoldenrodyellow;
-    margin: 1rem;
+    background-color: rgba(198, 220, 186, 0.478);
+    margin: 1rem auto;
     padding: 1rem 2rem;
     overflow: scroll;
 
@@ -268,7 +268,7 @@ table caption {
     padding: 0.5rem 1.5rem;
     font-size: 0.8rem;
     border-radius: 5px;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(198, 220, 186, 0.478);
     border: none;
     box-shadow: 1px 1px 5px 1px black;
 }
@@ -296,7 +296,7 @@ table caption {
     padding: 2rem;
     margin: 2rem 0;
     font-size: small;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(198, 220, 186, 0.478);
     overflow: scroll;
 }
 
@@ -314,7 +314,7 @@ table caption {
     margin: 0.2rem;
     width: 7rem;
     padding: 0.5rem;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(198, 220, 186, 0.478);
     border: 0;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
@@ -345,7 +345,7 @@ table caption {
     height: 90vh;
     margin: auto;
     padding: 2rem;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(198, 220, 186, 0.478);
 }
 
 .section5 h2 {
@@ -376,6 +376,13 @@ table caption {
 
 /* Mobail Screen */
 @media screen and (max-width:425px) {
+    body{
+        width: 96%;
+        margin: auto;
+    }
+    .section2{
+        /* margin: auto; */
+    }
     header {
         padding: 1rem
     }
@@ -413,5 +420,8 @@ table caption {
 
     .skill {
         width: 100%;
+    }
+    .section5{
+        height: auto;
     }
 }
