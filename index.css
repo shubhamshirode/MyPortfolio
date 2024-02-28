@@ -294,9 +294,9 @@ table caption {
 
 .section4 .pro {
     height: 20rem;
-    width: 100%;
+    width: 90%;
     padding: 2rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
     font-size: small;
     background-color: rgba(198, 220, 186, 0.478);
     overflow: scroll;
