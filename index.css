@@ -14,11 +14,19 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
+}
+
+body {
+    color: white;
+    background-size: 100% 100%;
+    background-image: url("assests/black1.jpg");
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
-    height: 5rem;
+    height: 3rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,9 +34,11 @@ header {
     margin: auto;
     position: sticky;
     top: 0;
-    background-color: White;
+    background-color: white;
     padding: 0 1rem;
     text-transform: uppercase;
+    color: black;
+    z-index: 1;
 }
 
 header ul {
@@ -52,7 +62,7 @@ header button {
 }
 
 header button a {
-    color: white;
+    color: #9290C3;
     text-shadow: none;
 }
 
@@ -97,7 +107,6 @@ header button a {
 
 /* Section 1 */
 .section1 {
-    background-color: rgba(198, 220, 186, 0.478);
     height: 100vh;
     width: 100%;
     background-size: 100% 100%;
@@ -109,10 +118,11 @@ header button a {
 .sect1_div1 {
     width: 5%;
     font-size: 2rem;
-
 }
 
 .sect1_div1 i {
+    color: white;
+    font-size: 3rem;
     margin: 0.5rem 1rem;
 }
 
@@ -121,7 +131,6 @@ header button a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: White;
 }
 
 .sect1_div2 {
@@ -134,7 +143,7 @@ header button a {
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px white;
 }
 
 .sect1_div2 p {
@@ -143,24 +152,23 @@ header button a {
 }
 
 .sect1_div2 button {
-    background-color: rgba(5, 5, 5, 0.4);
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px white;
+    border-radius: 10px;
     border: none;
     padding: 1rem 2.5rem;
     margin: 1rem;
 }
 
 .sect1_image {
-    height: 10rem;
+    height: 12rem;
     width: 10rem;
-    border-radius: 50%;
-    box-shadow: 1px 1px 10px 1PX black;
+    border-radius: 10px;
     margin: 1rem;
 }
 
 /* Section 2 */
 .section2 {
-    width: 90%;
+    width: 100%;
     height: 90vh;
     text-align: center;
     margin: 2rem auto;
@@ -195,18 +203,20 @@ header button a {
 /*  */
 .info {
     width: 45%;
-    margin: 1rem;
+    margin: 2rem;
     height: 90%;
     overflow: scroll;
-    background-color: rgba(198, 220, 186, 0.478);
+    box-shadow: inset 1px 1px 10px 2px white;
+    backdrop-filter: blur(10px);
 }
 
 .edu {
     width: 55%;
-    margin: 1rem;
+    margin: 2rem;
     height: 90%;
-    background-color: rgba(198, 220, 186, 0.478);
     overflow: scroll;
+    box-shadow: inset 1px 1px 10px 1px white;
+    backdrop-filter: blur(10px);
 }
 
 table {
@@ -228,7 +238,7 @@ table caption {
 
 /* Section 3 */
 .section3 {
-    width: 90%;
+    width: 100%;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -245,24 +255,30 @@ table caption {
 
 .certi {
     width: 55%;
-    background-color: rgba(198, 220, 186, 0.478);
-    margin: 1rem;
+    margin: 2rem;
     padding: 1rem;
     overflow: scroll;
+    box-shadow: inset 1px 1px 10px 2px white;
+    backdrop-filter: blur(10px);
+}
+
+.certi a {
+    color: white;
 }
 
 .certi li {
     padding: 1rem;
     list-style: none;
+    color: white;
 }
 
 .skill {
     width: 45%;
-    background-color: rgba(198, 220, 186, 0.478);
-    margin: 1rem;
+    margin: 2rem;
     padding: 1rem 2rem;
     overflow: scroll;
-
+    box-shadow: inset 1px 1px 10px 2px white;
+    backdrop-filter: blur(10px);
 }
 
 .skill button {
@@ -281,37 +297,42 @@ table caption {
 
 /* section 4 */
 .section4 {
-    width: 90%;
+    width: 100%;
+    height: auto;
     margin: 2rem auto;
-
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
 
 .section4>h2 {
     font-size: 2.5rem;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px white;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.section4 h3 {
     text-align: center;
     margin: 2rem;
-
 }
 
 .sect4-img {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 3rem;
-}
-
-.sect4-img div {
-    box-shadow: inset 2px 2px 10px 5px white;
-}
-
-.section4 img {
-    width: 40vw;
-    height: 60vh;
-    box-shadow: 1px 1px 10px 1px black;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
 }
 
 .sect4-im {
-    position: relative;
+    width: 40vw;
+    height: 60vh;
+    margin: auto;
+}
+
+.section4 img {
+    height: 100%;
+    width: 100%;
 }
 
 .sect4-text {
@@ -319,11 +340,11 @@ table caption {
     position: absolute;
     padding: 1rem;
     height: 60vh;
-    margin-top: -61vh;
-    background-color: rgba(0, 0, 0, 0.893);
+    width: 41vw;
+    margin: -60vh 2vw;
+    background-color: rgba(0, 0, 0, 0.95);
     color: white;
-    width: 40vw;
-
+    box-shadow: inset 2px 2px 10px 5px white;
 }
 
 .sect4-text h2 {
@@ -332,7 +353,6 @@ table caption {
 }
 
 .sect4-im:hover~.sect4-text {
-
     display: flex;
     flex-direction: column;
 }
@@ -355,26 +375,40 @@ table caption {
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
-/*  */
-
-
-
 /* Section 5 */
 .section5 {
     text-align: center;
     width: 90%;
     margin: auto;
-    height: 90vh;
     padding: 2rem;
-    background-color: rgba(198, 220, 186, 0.478);
+    box-shadow: inset 1px 1px 10px 1px white;
+    backdrop-filter: blur(10px);
+    margin-bottom: 3rem;
 }
-table{
-    margin-right: 1rem;
+
+.section5 table {
+    width: 90%;
 }
+
 .section5 h2 {
     font-size: 2.5rem;
     text-shadow: 1px 1px 2px black;
 }
+
+footer {
+    height: 3rem;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-shadow: 1px 1px 0px black;
+}
+
 
 /* Tablet Screen */
 @media screen and (max-width:768px) {
@@ -410,6 +444,10 @@ table{
 
     .sect1_div1 {
         width: 90%;
+    }
+
+    .sect1_div2 p {
+        width: 100%;
     }
 
     .sect1_div1 div {
@@ -457,13 +495,14 @@ table{
         row-gap: 3rem;
     }
 
-    .sect4-img img {
-        width: 90vw;
+    .sect4-im {
+        width: 100%;
         margin: auto;
     }
 
     .sect4-text {
-        width: 90vw;
+        width: 82vw;
+        margin: -60vh 0vw;
     }
 
     .certi {
@@ -478,5 +517,9 @@ table{
 
     .section5 {
         height: auto;
+    }
+
+    .section5 table {
+        width: 100%;
     }
 }
