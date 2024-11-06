@@ -354,7 +354,9 @@ table caption {
 
 .sect4-text h2 {
     text-align: center;
+    color: orangered;
     margin-bottom: 1rem;
+    border-bottom:1px solid rgba(255, 68, 0, 0.719);
 }
 
 .sect4-im:hover~.sect4-text {
@@ -366,8 +368,13 @@ table caption {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+.skill_learned{
+    text-align: center;
+    padding: 1rem 1rem;
+}
 .section4 button {
     align-self: center;
     text-align: center;
@@ -379,7 +386,9 @@ table caption {
     border-radius: 5px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.7);
 }
-
+.sect4-text button:hover{
+    background-color: rgb(35, 31, 39);
+}
 /* Section 5 */
 .section5 {
     text-align: center;
@@ -434,6 +443,15 @@ footer p {
         display: flex;
         flex-direction: column;
     }
+    /* .section2 .info tbody tr {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section2 .info tbody td{
+        text-align: center;
+    } */
+    
 }
 
 /* Mobail Screen */
